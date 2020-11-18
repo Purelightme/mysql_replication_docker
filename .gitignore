@@ -1,0 +1,6 @@
+.idea
+.DS_Store
+
+master/data
+slave1/data
+slave2/data
