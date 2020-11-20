@@ -17,7 +17,7 @@ services:
       - '33060:3306'
     volumes:
       - ./master/data:/var/lib/mysql
-      - ./master/conf:/etc/mysql/mysql.conf.d
+      - ./master/conf:/etc/mysql/conf.d
 
   slave1:
       build:
@@ -31,7 +31,7 @@ services:
         - '33061:3306'
       volumes:
         - ./slave1/data:/var/lib/mysql
-        - ./slave1/conf:/etc/mysql/mysql.conf.d
+        - ./slave1/conf:/etc/mysql/conf.d
 
   slave2:
     build:
@@ -45,4 +45,4 @@ services:
       - '33062:3306'
     volumes:
       - ./slave2/data:/var/lib/mysql
-      - ./slave2/conf:/etc/mysql/mysql.conf.d
+      - ./slave2/conf:/etc/mysql/conf.d
